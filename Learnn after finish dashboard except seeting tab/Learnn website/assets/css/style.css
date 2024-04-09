@@ -4993,6 +4993,7 @@ textarea.form-control {
 }
 
 @media(min-width:900px) {
+  .dashTabcontentCustomWidth{width: 70%;}
   .loginContainer {
     width: 40%;
     margin: 30px auto 0 auto;
@@ -5341,4 +5342,14 @@ a.playVideoLink.vidDash {
 }
 thead th {
   background-color: #D4D5D5 !important;
+}
+#courseDetailsSection{display: none;}
+.tagsCloudItem{
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 4px 12px;
+  margin-left: 15px;
 }

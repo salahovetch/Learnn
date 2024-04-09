@@ -386,3 +386,11 @@ function showPassword(id,hideElement,showElement) {
     }
     
   }
+  function showCourseDetails(){
+    document.getElementById('courseDetailsSection').style.display= 'block';
+      document.getElementById('courseMainSection').style.display= 'none';
+  }
+  function hideCourseDetails(){
+    document.getElementById('courseDetailsSection').style.display= 'none';
+      document.getElementById('courseMainSection').style.display= 'block';
+  }

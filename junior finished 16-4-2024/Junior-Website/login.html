@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Junior - Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top innerHeader staticPosition">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class=" d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center notscrolledLogo">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <a href="index.html" class="logo d-flex align-items-center scrolledLogo">
+          <img src="assets/img/logoScrolled.png" alt="">
+        </a>
+        
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="index.html">الرئيسية</a></li>
+            <li><a class="nav-link scrollto" href="subscriptionPlans.html">خطط الاشتراك</a></li>
+            <li><a class="nav-link scrollto" href="coursesListsOne.html">الدورات</a></li>
+            <li><a class="nav-link scrollto" href="about.html">عنآ</a></li>
+            <li><a class="nav-link scrollto" href="blog.html">المدونة</a></li>
+            <li><a href="contactUs.html">أتصل بنا</a></li>
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+      <div>
+        <nav id="navbar2" class="navbar">
+          <ul>
+            <li><a class="nav-link topHeaderIcon bi bi-cart" href="#"></a></li>
+            <li>
+              <a class="nav-link topHeaderIcon bi bi-search " data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"></a>
+            </li>
+
+
+            <li class="lang separator">
+              <a class="nav-link " href="#">
+
+                عربي
+                <img src="assets/img/lang.png" alt="">
+              </a>
+            </li>
+            <li><a class="nav-link " href="login.html">
+                <i class="ri-group-line"></i>
+
+                تسجيل الدخول
+              </a></li>
+            <li>
+              <a href="register.html" class="btnStyledeafult d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>سجل الأن</span>
+              </a>
+            </li>
+
+        </ul></nav><!-- .navbar -->
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio customPortfolio p-0">
+
+      <div class="container-fluid p-0 padding-20-mobile">
+        <div class="row rtl">
+
+          <div class="col-lg-6 col-12 text-right customLoginBigPadding">
+
+ 
+                <h1 class="w-600 blackDegree fs16 text-right my-3">تسجيل الدخول </h1>
+                <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</span>
+                <div class="loginRowMargin">
+                  <h1 class="w-600 fs16">البريد الالكتروني</h1>
+                  <input type="email" name="email" class="form-control customHeightControl" placeholder="you@company.com" required="">
+                </div>
+
+                <div class="loginRowMargin relative">
+                  <h1 class="w-600 fs16">كلمة السر</h1>
+                  <input type="password"  id="passwordControl" class="form-control customHeightControl"  required="">
+                  <a id="showPass" onclick="showPassword('passwordControl')" class="ri-eye-line passordToggle"></a>
+                  <a id="hidePass" onclick="hidePassword('passwordControl')" class="ri-eye-off-line passordToggle hiddenInput"></a>
+                  <!-- <i class="ri-eye-off-line"></i> -->
+                </div>
+
+                <div class="d-flex loginRowMargin justify-content-between" role="group" aria-label="Basic radio toggle button group">
+                  <div>
+                    <input type="checkbox" class="ms-1" id="btncheck1" autocomplete="off">
+                    <label for="btncheck1">تذكرني مرة اخري</label>
+                  </div>
+                <span>
+                  نسيت كلمة السر؟
+                </span>
+                </div>
+
+                <div class="text-center loginRowMargin">
+  
+                  <button class="btn btn-outline-secondary btnDeafultCustom ms-3 w-100Btn purbleDarkBG w-600 staticPosition" type="submit">تسجيل الدخول</button>
+                </div>
+           
+                <div class="anotherOptionSeparator loginRowMargin">
+                  او سجل الدخول عبر
+
+                </div>
+                <div class="text-center d-flex align-items-center justify-content-between">
+
+                  <a class="loginWithSocialBtn facebook">
+                    فيسبوك
+                    <i class="bi bi-facebook faceBookIconLogin"></i>
+    
+                  </a>
+                  <a class="loginWithSocialBtn facebook">
+                    جوجل
+                    <img class="mr5" src="assets/img/google.png" alt="">
+    
+                  </a>
+                  <!-- <a class="tag-item social programing facebook">
+                    <i class="bi bi-facebook"></i>
+    
+                  </a> -->
+                  
+                </div>
+          </div>
+
+        
+          <div class="col-lg-6 col-12 text-right d-none d-sm-block">
+            <img src="assets/img/loginBg.png" class="img-fluid" alt="">
+          </div>
+
+
+          
+
+
+        </div>
+
+     
+
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+
+
+
+
+  </main><!-- End #main -->
+
+
+  <!--  JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

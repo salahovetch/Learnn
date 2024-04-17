@@ -4106,3 +4106,25 @@ div.ml0[role="progressbar"]{
   background-color:  #5f00d0;
 
 }
+
+@media (max-width: 768px) {
+  #progress-bar-container li .step-inner span {
+    font-weight: normal;
+    min-height: 30px;
+    display: inline-block;
+}
+#progress-bar-container ul,#progress-content-section{    width: 100%;}
+#progress-bar-container li .step-inner::before {
+  content: "";
+  width: 80%;
+  height: 3px;
+  background-color: #f2f4f7;
+  top: -22px;
+  position: absolute;
+  left: 59%;
+  z-index: 1;
+}
+#progress-bar-container li .step-inner {
+  font-size: 11px;
+}
+}

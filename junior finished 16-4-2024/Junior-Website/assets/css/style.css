@@ -4087,3 +4087,21 @@ div.ml0[role="progressbar"]{
   right: 240px;
 }
 #progress-bar-container #line{display: none;}
+
+#progress-bar-container li .step-inner::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #f2f4f7;
+  top: -28px;
+  position: absolute;
+  right: 54%;
+}
+#progress-bar-container li:last-child .step-inner::before {
+  display: none;
+}
+
+#progress-bar-container li.active .step-inner::before{
+  background-color:  #5f00d0;
+
+}

@@ -4090,14 +4090,15 @@ div.ml0[role="progressbar"]{
 
 #progress-bar-container li .step-inner::before {
   content: "";
-  width: 100%;
-  height: 5px;
+  width: 92%;
+  height: 3px;
   background-color: #f2f4f7;
   top: -28px;
   position: absolute;
-  right: 54%;
+  left: 54%;
+  z-index: 1;
 }
-#progress-bar-container li:last-child .step-inner::before {
+#progress-bar-container li:first-child .step-inner::before {
   display: none;
 }
 
